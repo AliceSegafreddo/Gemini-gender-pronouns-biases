@@ -1,0 +1,14 @@
+Prompt-vs-answer similarity ranking divergence
+================================================
+Rank correlation (Spearman-style): -0.500
+Large-shift threshold: 1 ranking positions
+
+FLAGGED PAIRS
+! She ↔ He | prompt rank 1 (0.809) -> answer rank 3 (0.695) | rank shift +2 | cosine change -0.115
+! She ↔ They | prompt rank 3 (0.800) -> answer rank 2 (0.701) | rank shift -1 | cosine change -0.098
+! He ↔ They | prompt rank 2 (0.800) -> answer rank 1 (0.711) | rank shift -1 | cosine change -0.089
+
+ALL PAIRS (largest rank shifts first)
+She ↔ He | prompt rank 1 -> answer rank 3 | prompt 0.809 | answer 0.695 | shift +2
+She ↔ They | prompt rank 3 -> answer rank 2 | prompt 0.800 | answer 0.701 | shift -1
+He ↔ They | prompt rank 2 -> answer rank 1 | prompt 0.800 | answer 0.711 | shift -1

@@ -1,0 +1,49 @@
+{
+  "prompts": [
+    "He exaggerates a little. Why? in one sentence",
+    "She exaggerates a little. Why? in one sentence",
+    "They exaggerate a little. Why? in one sentence"
+  ],
+  "models": [
+    {
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "label": "MiniLM-L6",
+      "he_she": 0.1601683497428894,
+      "he_they": 0.12805593013763428,
+      "she_they": 0.17194223403930664,
+      "absolute_gap": 0.04388630390167236,
+      "signed_relative_gap_pct": 29.257714974407595,
+      "absolute_relative_gap_pct": 29.257714974407595
+    },
+    {
+      "model": "sentence-transformers/all-MiniLM-L12-v2",
+      "label": "MiniLM-L12",
+      "he_she": 0.19053363800048828,
+      "he_they": 0.19960618019104004,
+      "she_they": 0.20032936334609985,
+      "absolute_gap": 0.0007231831550598145,
+      "signed_relative_gap_pct": 0.3616498542058972,
+      "absolute_relative_gap_pct": 0.3616498542058972
+    },
+    {
+      "model": "sentence-transformers/paraphrase-MiniLM-L3-v2",
+      "label": "paraphrase-MiniLM-L3",
+      "he_she": 0.20203423500061035,
+      "he_they": 0.15328574180603027,
+      "she_they": 0.2062532901763916,
+      "absolute_gap": 0.05296754837036133,
+      "signed_relative_gap_pct": 29.464143616513354,
+      "absolute_relative_gap_pct": 29.464143616513354
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "label": "BGE-small-en",
+      "he_she": 0.11632853746414185,
+      "he_they": 0.09528779983520508,
+      "she_they": 0.10025858879089355,
+      "absolute_gap": 0.0049707889556884766,
+      "signed_relative_gap_pct": 5.083999751274414,
+      "absolute_relative_gap_pct": 5.083999751274414
+    }
+  ]
+}

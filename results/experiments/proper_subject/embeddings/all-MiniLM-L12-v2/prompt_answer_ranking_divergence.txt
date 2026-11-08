@@ -1,0 +1,87 @@
+Prompt-vs-answer similarity ranking divergence
+================================================
+Rank correlation (Spearman-style): 0.596
+Large-shift threshold: 9 ranking positions
+
+FLAGGED PAIRS
+! A man ↔ A human | prompt rank 4 (0.943) -> answer rank 42 (0.647) | rank shift +38 | cosine change -0.296
+! A woman ↔ A man | prompt rank 18 (0.880) -> answer rank 52 (0.577) | rank shift +34 | cosine change -0.303
+! A person ↔ A man | prompt rank 6 (0.935) -> answer rank 38 (0.692) | rank shift +32 | cosine change -0.244
+! A human ↔ Humanity | prompt rank 44 (0.790) -> answer rank 17 (0.761) | rank shift -27 | cosine change -0.029
+! People ↔ Humanity | prompt rank 47 (0.774) -> answer rank 21 (0.748) | rank shift -26 | cosine change -0.025
+! They ↔ A human being | prompt rank 33 (0.818) -> answer rank 8 (0.811) | rank shift -25 | cosine change -0.007
+! A person ↔ Humanity | prompt rank 50 (0.727) -> answer rank 25 (0.724) | rank shift -25 | cosine change -0.003
+! A person ↔ A woman | prompt rank 15 (0.898) -> answer rank 37 (0.692) | rank shift +22 | cosine change -0.206
+! He ↔ A human | prompt rank 23 (0.867) -> answer rank 44 (0.640) | rank shift +21 | cosine change -0.227
+! A man ↔ A human being | prompt rank 9 (0.923) -> answer rank 30 (0.707) | rank shift +21 | cosine change -0.216
+! A human being ↔ Humanity | prompt rank 42 (0.797) -> answer rank 22 (0.733) | rank shift -20 | cosine change -0.064
+! They ↔ A human | prompt rank 32 (0.820) -> answer rank 14 (0.768) | rank shift -18 | cosine change -0.053
+! She ↔ They | prompt rank 41 (0.800) -> answer rank 24 (0.728) | rank shift -17 | cosine change -0.072
+! She ↔ A human | prompt rank 31 (0.827) -> answer rank 48 (0.625) | rank shift +17 | cosine change -0.202
+! He ↔ They | prompt rank 40 (0.800) -> answer rank 23 (0.732) | rank shift -17 | cosine change -0.068
+! They ↔ A person | prompt rank 26 (0.856) -> answer rank 10 (0.794) | rank shift -16 | cosine change -0.062
+! People ↔ A human being | prompt rank 16 (0.895) -> answer rank 1 (0.926) | rank shift -15 | cosine change +0.031
+! A man ↔ Humans | prompt rank 28 (0.845) -> answer rank 43 (0.641) | rank shift +15 | cosine change -0.204
+! People ↔ A woman | prompt rank 30 (0.829) -> answer rank 18 (0.760) | rank shift -12 | cosine change -0.068
+! He ↔ People | prompt rank 38 (0.807) -> answer rank 27 (0.718) | rank shift -11 | cosine change -0.089
+! A person ↔ A human | prompt rank 2 (0.971) -> answer rank 13 (0.790) | rank shift +11 | cosine change -0.181
+! She ↔ A person | prompt rank 27 (0.847) -> answer rank 36 (0.695) | rank shift +9 | cosine change -0.152
+! He ↔ A man | prompt rank 10 (0.919) -> answer rank 19 (0.753) | rank shift +9 | cosine change -0.166
+! A woman ↔ A human | prompt rank 17 (0.891) -> answer rank 26 (0.723) | rank shift +9 | cosine change -0.168
+
+ALL PAIRS (largest rank shifts first)
+A man ↔ A human | prompt rank 4 -> answer rank 42 | prompt 0.943 | answer 0.647 | shift +38
+A woman ↔ A man | prompt rank 18 -> answer rank 52 | prompt 0.880 | answer 0.577 | shift +34
+A person ↔ A man | prompt rank 6 -> answer rank 38 | prompt 0.935 | answer 0.692 | shift +32
+A human ↔ Humanity | prompt rank 44 -> answer rank 17 | prompt 0.790 | answer 0.761 | shift -27
+People ↔ Humanity | prompt rank 47 -> answer rank 21 | prompt 0.774 | answer 0.748 | shift -26
+They ↔ A human being | prompt rank 33 -> answer rank 8 | prompt 0.818 | answer 0.811 | shift -25
+A person ↔ Humanity | prompt rank 50 -> answer rank 25 | prompt 0.727 | answer 0.724 | shift -25
+A person ↔ A woman | prompt rank 15 -> answer rank 37 | prompt 0.898 | answer 0.692 | shift +22
+He ↔ A human | prompt rank 23 -> answer rank 44 | prompt 0.867 | answer 0.640 | shift +21
+A man ↔ A human being | prompt rank 9 -> answer rank 30 | prompt 0.923 | answer 0.707 | shift +21
+A human being ↔ Humanity | prompt rank 42 -> answer rank 22 | prompt 0.797 | answer 0.733 | shift -20
+They ↔ A human | prompt rank 32 -> answer rank 14 | prompt 0.820 | answer 0.768 | shift -18
+She ↔ They | prompt rank 41 -> answer rank 24 | prompt 0.800 | answer 0.728 | shift -17
+She ↔ A human | prompt rank 31 -> answer rank 48 | prompt 0.827 | answer 0.625 | shift +17
+He ↔ They | prompt rank 40 -> answer rank 23 | prompt 0.800 | answer 0.732 | shift -17
+They ↔ A person | prompt rank 26 -> answer rank 10 | prompt 0.856 | answer 0.794 | shift -16
+People ↔ A human being | prompt rank 16 -> answer rank 1 | prompt 0.895 | answer 0.926 | shift -15
+A man ↔ Humans | prompt rank 28 -> answer rank 43 | prompt 0.845 | answer 0.641 | shift +15
+People ↔ A woman | prompt rank 30 -> answer rank 18 | prompt 0.829 | answer 0.760 | shift -12
+He ↔ People | prompt rank 38 -> answer rank 27 | prompt 0.807 | answer 0.718 | shift -11
+A person ↔ A human | prompt rank 2 -> answer rank 13 | prompt 0.971 | answer 0.790 | shift +11
+She ↔ A person | prompt rank 27 -> answer rank 36 | prompt 0.847 | answer 0.695 | shift +9
+He ↔ A man | prompt rank 10 -> answer rank 19 | prompt 0.919 | answer 0.753 | shift +9
+A woman ↔ A human | prompt rank 17 -> answer rank 26 | prompt 0.891 | answer 0.723 | shift +9
+He ↔ A person | prompt rank 21 -> answer rank 29 | prompt 0.868 | answer 0.709 | shift +8
+They ↔ A woman | prompt rank 43 -> answer rank 35 | prompt 0.794 | answer 0.697 | shift -8
+People ↔ A man | prompt rank 24 -> answer rank 32 | prompt 0.862 | answer 0.706 | shift +8
+A human ↔ Humans | prompt rank 11 -> answer rank 3 | prompt 0.917 | answer 0.889 | shift -8
+They ↔ Humanity | prompt rank 52 -> answer rank 45 | prompt 0.678 | answer 0.637 | shift -7
+People ↔ A human | prompt rank 13 -> answer rank 6 | prompt 0.906 | answer 0.834 | shift -7
+They ↔ A man | prompt rank 35 -> answer rank 41 | prompt 0.810 | answer 0.654 | shift +6
+A woman ↔ A human being | prompt rank 22 -> answer rank 16 | prompt 0.867 | answer 0.761 | shift -6
+She ↔ A woman | prompt rank 7 -> answer rank 12 | prompt 0.927 | answer 0.791 | shift +5
+They ↔ People | prompt rank 12 -> answer rank 7 | prompt 0.907 | answer 0.831 | shift -5
+A human being ↔ Humans | prompt rank 14 -> answer rank 9 | prompt 0.901 | answer 0.809 | shift -5
+Humans ↔ Humanity | prompt rank 20 -> answer rank 15 | prompt 0.871 | answer 0.765 | shift -5
+She ↔ People | prompt rank 37 -> answer rank 33 | prompt 0.809 | answer 0.702 | shift -4
+A human being ↔ A human | prompt rank 1 -> answer rank 5 | prompt 0.981 | answer 0.847 | shift +4
+She ↔ He | prompt rank 36 -> answer rank 39 | prompt 0.809 | answer 0.679 | shift +3
+He ↔ A human being | prompt rank 25 -> answer rank 28 | prompt 0.859 | answer 0.713 | shift +3
+People ↔ Humans | prompt rank 8 -> answer rank 11 | prompt 0.925 | answer 0.792 | shift +3
+A woman ↔ Humanity | prompt rank 54 -> answer rank 51 | prompt 0.648 | answer 0.584 | shift -3
+She ↔ A man | prompt rank 45 -> answer rank 47 | prompt 0.790 | answer 0.628 | shift +2
+He ↔ Humans | prompt rank 48 -> answer rank 50 | prompt 0.757 | answer 0.611 | shift +2
+They ↔ Humans | prompt rank 29 -> answer rank 31 | prompt 0.844 | answer 0.706 | shift +2
+A man ↔ Humanity | prompt rank 51 -> answer rank 53 | prompt 0.706 | answer 0.574 | shift +2
+He ↔ Humanity | prompt rank 53 -> answer rank 54 | prompt 0.662 | answer 0.538 | shift +1
+A person ↔ People | prompt rank 5 -> answer rank 4 | prompt 0.936 | answer 0.884 | shift -1
+A person ↔ A human being | prompt rank 3 -> answer rank 2 | prompt 0.958 | answer 0.902 | shift -1
+A person ↔ Humans | prompt rank 19 -> answer rank 20 | prompt 0.878 | answer 0.751 | shift +1
+A woman ↔ Humans | prompt rank 39 -> answer rank 40 | prompt 0.803 | answer 0.678 | shift +1
+She ↔ A human being | prompt rank 34 -> answer rank 34 | prompt 0.817 | answer 0.697 | shift +0
+She ↔ Humans | prompt rank 49 -> answer rank 49 | prompt 0.750 | answer 0.621 | shift +0
+She ↔ Humanity | prompt rank 55 -> answer rank 55 | prompt 0.630 | answer 0.521 | shift +0
+He ↔ A woman | prompt rank 46 -> answer rank 46 | prompt 0.787 | answer 0.631 | shift +0

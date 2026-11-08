@@ -1,0 +1,44 @@
+Prompt-vs-answer similarity ranking divergence
+================================================
+Rank correlation (Spearman-style): 0.083
+Large-shift threshold: 3 ranking positions
+
+FLAGGED PAIRS
+! He ↔ They | prompt rank 17 (0.800) -> answer rank 1 (0.759) | rank shift -16 | cosine change -0.042
+! She ↔ They | prompt rank 18 (0.800) -> answer rank 3 (0.742) | rank shift -15 | cosine change -0.058
+! I ↔ It | prompt rank 3 (0.891) -> answer rank 18 (0.529) | rank shift +15 | cosine change -0.362
+! I ↔ You | prompt rank 2 (0.926) -> answer rank 15 (0.551) | rank shift +13 | cosine change -0.375
+! She ↔ He | prompt rank 14 (0.809) -> answer rank 2 (0.749) | rank shift -12 | cosine change -0.061
+! We ↔ It | prompt rank 5 (0.872) -> answer rank 16 (0.543) | rank shift +11 | cosine change -0.329
+! She ↔ I | prompt rank 15 (0.803) -> answer rank 7 (0.591) | rank shift -8 | cosine change -0.211
+! You ↔ It | prompt rank 12 (0.817) -> answer rank 20 (0.518) | rank shift +8 | cosine change -0.299
+! She ↔ We | prompt rank 16 (0.802) -> answer rank 10 (0.585) | rank shift -6 | cosine change -0.217
+! You ↔ We | prompt rank 6 (0.858) -> answer rank 11 (0.585) | rank shift +5 | cosine change -0.273
+! She ↔ It | prompt rank 9 (0.842) -> answer rank 13 (0.576) | rank shift +4 | cosine change -0.265
+! He ↔ We | prompt rank 13 (0.816) -> answer rank 9 (0.589) | rank shift -4 | cosine change -0.227
+! He ↔ It | prompt rank 8 (0.849) -> answer rank 12 (0.579) | rank shift +4 | cosine change -0.270
+! I ↔ We | prompt rank 1 (0.928) -> answer rank 5 (0.657) | rank shift +4 | cosine change -0.272
+! He ↔ I | prompt rank 11 (0.825) -> answer rank 14 (0.564) | rank shift +3 | cosine change -0.261
+
+ALL PAIRS (largest rank shifts first)
+He ↔ They | prompt rank 17 -> answer rank 1 | prompt 0.800 | answer 0.759 | shift -16
+She ↔ They | prompt rank 18 -> answer rank 3 | prompt 0.800 | answer 0.742 | shift -15
+I ↔ It | prompt rank 3 -> answer rank 18 | prompt 0.891 | answer 0.529 | shift +15
+I ↔ You | prompt rank 2 -> answer rank 15 | prompt 0.926 | answer 0.551 | shift +13
+She ↔ He | prompt rank 14 -> answer rank 2 | prompt 0.809 | answer 0.749 | shift -12
+We ↔ It | prompt rank 5 -> answer rank 16 | prompt 0.872 | answer 0.543 | shift +11
+She ↔ I | prompt rank 15 -> answer rank 7 | prompt 0.803 | answer 0.591 | shift -8
+You ↔ It | prompt rank 12 -> answer rank 20 | prompt 0.817 | answer 0.518 | shift +8
+She ↔ We | prompt rank 16 -> answer rank 10 | prompt 0.802 | answer 0.585 | shift -6
+You ↔ We | prompt rank 6 -> answer rank 11 | prompt 0.858 | answer 0.585 | shift +5
+She ↔ It | prompt rank 9 -> answer rank 13 | prompt 0.842 | answer 0.576 | shift +4
+He ↔ We | prompt rank 13 -> answer rank 9 | prompt 0.816 | answer 0.589 | shift -4
+He ↔ It | prompt rank 8 -> answer rank 12 | prompt 0.849 | answer 0.579 | shift +4
+I ↔ We | prompt rank 1 -> answer rank 5 | prompt 0.928 | answer 0.657 | shift +4
+He ↔ I | prompt rank 11 -> answer rank 14 | prompt 0.825 | answer 0.564 | shift +3
+They ↔ I | prompt rank 10 -> answer rank 8 | prompt 0.838 | answer 0.591 | shift -2
+They ↔ You | prompt rank 19 -> answer rank 17 | prompt 0.785 | answer 0.536 | shift -2
+He ↔ You | prompt rank 20 -> answer rank 19 | prompt 0.776 | answer 0.521 | shift -1
+They ↔ It | prompt rank 7 -> answer rank 6 | prompt 0.849 | answer 0.644 | shift -1
+She ↔ You | prompt rank 21 -> answer rank 21 | prompt 0.733 | answer 0.498 | shift +0
+They ↔ We | prompt rank 4 -> answer rank 4 | prompt 0.876 | answer 0.665 | shift +0
