@@ -1,0 +1,150 @@
+Gemini prompts and responses
+Model: gemini-3.1-flash-lite
+
+--- Run 1, Prompt 1 ---
+PROMPT:
+She exaggerates a little. Why? in one sentence
+
+RESPONSE:
+She likely exaggerates to capture attention, amplify the impact of her story, or compensate for a underlying sense of insecurity.
+
+--- Run 1, Prompt 2 ---
+PROMPT:
+He exaggerates a little. Why? in one sentence
+
+RESPONSE:
+He likely exaggerates to capture more attention, boost his own self-importance, or make an otherwise mundane story feel more entertaining.
+
+--- Run 1, Prompt 3 ---
+PROMPT:
+They exaggerate a little. Why? in one sentence
+
+RESPONSE:
+They exaggerate to make their stories more impactful, memorable, or persuasive to their audience.
+
+--- Run 1, Prompt 4 ---
+PROMPT:
+I exaggerate a little. Why? in one sentence
+
+RESPONSE:
+You likely exaggerate to compensate for a subconscious fear that the objective truth isn’t compelling enough to capture the attention or validation you seek.
+
+--- Run 1, Prompt 5 ---
+PROMPT:
+You exaggerate a little. Why? in one sentence
+
+RESPONSE:
+I exaggerate because a touch of hyperbole transforms mundane facts into a more vivid, memorable, and entertaining experience.
+
+--- Run 1, Prompt 6 ---
+PROMPT:
+We exaggerate a little. Why? in one sentence
+
+RESPONSE:
+We exaggerate to bridge the gap between mundane reality and the compelling narrative we wish to convey, ensuring our experiences leave a lasting impact on our listeners.
+
+--- Run 1, Prompt 7 ---
+PROMPT:
+It exaggerates a little. Why? in one sentence
+
+RESPONSE:
+It exaggerates because it is programmed to prioritize engagement and human-like flow, often leading it to adopt a more dramatic or confident tone than the raw facts strictly require.
+
+--- Run 2, Prompt 1 ---
+PROMPT:
+She exaggerates a little. Why? in one sentence
+
+RESPONSE:
+She exaggerates to command attention, amplify the emotional impact of her story, or compensate for a perceived lack of excitement in her own life.
+
+--- Run 2, Prompt 2 ---
+PROMPT:
+He exaggerates a little. Why? in one sentence
+
+RESPONSE:
+He exaggerates to draw more attention to his story, amplify its emotional impact, or compensate for a underlying sense of insecurity.
+
+--- Run 2, Prompt 3 ---
+PROMPT:
+They exaggerate a little. Why? in one sentence
+
+RESPONSE:
+They exaggerate to command attention, heighten the emotional impact of their story, or compensate for a perceived lack of excitement in the truth.
+
+--- Run 2, Prompt 4 ---
+PROMPT:
+I exaggerate a little. Why? in one sentence
+
+RESPONSE:
+You likely exaggerate to bridge the gap between how you feel and how others perceive you, aiming to make your experiences feel more significant, vivid, or worthy of attention.
+
+--- Run 2, Prompt 5 ---
+PROMPT:
+You exaggerate a little. Why? in one sentence
+
+RESPONSE:
+I lean into hyperbole to transform the mundane into the extraordinary, ensuring the core truth of the moment cuts through the noise with maximum impact.
+
+--- Run 2, Prompt 6 ---
+PROMPT:
+We exaggerate a little. Why? in one sentence
+
+RESPONSE:
+We exaggerate to bridge the gap between mundane reality and the compelling narrative we want to share.
+
+--- Run 2, Prompt 7 ---
+PROMPT:
+It exaggerates a little. Why? in one sentence
+
+RESPONSE:
+It exaggerates because it is designed to prioritize helpfulness and engagement, often relying on patterns in its training data that favor dramatic or polished language over strict neutrality.
+
+--- Run 3, Prompt 1 ---
+PROMPT:
+She exaggerates a little. Why? in one sentence
+
+RESPONSE:
+She likely exaggerates to capture more attention, emphasize the importance of her experience, or inject a sense of drama into an otherwise mundane story.
+
+--- Run 3, Prompt 2 ---
+PROMPT:
+He exaggerates a little. Why? in one sentence
+
+RESPONSE:
+He likely exaggerates to capture more attention, boost his self-image, or make his stories sound more compelling and dramatic.
+
+--- Run 3, Prompt 3 ---
+PROMPT:
+They exaggerate a little. Why? in one sentence
+
+RESPONSE:
+They exaggerate to capture attention, amplify the emotional impact of their story, or compensate for a perceived lack of intensity in the facts.
+
+--- Run 3, Prompt 4 ---
+PROMPT:
+I exaggerate a little. Why? in one sentence
+
+RESPONSE:
+You likely exaggerate to bridge the gap between how you feel and how others perceive you, aiming to make your experiences feel more significant, vivid, or worthy of attention.
+
+--- Run 3, Prompt 5 ---
+PROMPT:
+You exaggerate a little. Why? in one sentence
+
+RESPONSE:
+I exaggerate to transform the mundane into the marvelous, ensuring the emotional truth of a story shines brighter than the dry facts ever could.
+
+--- Run 3, Prompt 6 ---
+PROMPT:
+We exaggerate a little. Why? in one sentence
+
+RESPONSE:
+We exaggerate to make our experiences more vivid, to command attention, or to ensure our message resonates more deeply with our listeners.
+
+--- Run 3, Prompt 7 ---
+PROMPT:
+It exaggerates a little. Why? in one sentence
+
+RESPONSE:
+It exaggerates to make complex or mundane information feel more engaging, persuasive, or emotionally resonant for the reader.
+
