@@ -9,34 +9,39 @@ This project studies Gemini 3.1 Flash-Lite responses to three prompts:
 The primary dataset contains **25 rounds × 3 prompts = 75 responses**.
 The default embedding model is `sentence-transformers/all-MiniLM-L12-v2`.
 
+**[Read the report (PDF)](Gemini_pronoun_analysis_report%20copie.pdf)**
+
 ## Project layout
 
 ```text
+Gemini_pronoun_analysis_report copie.pdf   Research report
+analyze_gemini_responses.py               Embedding analysis
+analyze_tfidf_biases.py                    TF-IDF analysis
+collect_gemini_responses.py                Collect new Gemini responses
+project_paths.py                          Shared paths and study defaults
 data/
   main/responses.txt          Saved primary dataset (75 responses)
   experiments/                Other pronouns, pilot runs, and grammar comparisons
-  collections/                New API collections; excluded from Git by default
+  earlier_model_comparisons/   Earlier embedding-model figures
 results/
   main/
     embeddings/<model>/       Prompt/answer projections, heatmaps, ranking report
     tfidf/                    terms.csv and terms.xlsx
     report_support/           Verified numbers, embeddings, complete term scores
   experiments/                Results from other datasets
-reports/
-  main/
-    Gemini_pronoun_analysis_report.docx   Current manually edited report
-    figures/                  The five current report figures and PDF exports
 scripts/
   reporting/                  Reproduce report statistics and figures
   experiments/                Filtering, grammar splits, combined analysis
   maintenance/                Migration utility and local checks
-archive/                      Earlier figures, report drafts, backups, old scripts
+tests/                        Offline workflow checks
+pyproject.toml                Python version and dependencies
+uv.lock                       Locked dependency versions
 ```
 
-`archive/` remains on disk and is excluded from Git. Nothing was deleted during
-the reorganization. Its `reorganization_manifest.json` records original paths,
-new paths, and file hashes. Earlier model-comparison plots with uncertain dataset
-provenance are under `archive/figures/earlier_model_comparisons/`.
+The primary study is under `data/main/` and `results/main/`. Earlier experiments
+and model comparisons have separate folders. New API collections are written
+to `data/collections/`; local archives use `archive/`. Both folders are excluded
+from Git by default and are created when needed.
 
 ## Setup
 
@@ -100,27 +105,33 @@ uv run python -m scripts.experiments.split_conjugation_variants --help
 
 ## Report and figures
 
-The Word document is the authoritative edited report. The archived Markdown
-drafts and historical report-building scripts represent earlier versions.
+The [research report (PDF)](Gemini_pronoun_analysis_report%20copie.pdf) is included
+at the repository root. The saved numerical results are under
+`results/main/report_support/`, and the main embedding figures are under
+`results/main/embeddings/all-MiniLM-L12-v2/`.
 
-These commands regenerate numerical support and figure assets, while preserving
-the Word document:
+These commands regenerate the report's numerical support and figure assets:
 
 ```bash
 uv run python -m scripts.reporting.report_analysis
 uv run python -m scripts.reporting.report_embedder_comparison
 ```
 
-The second command uses all four locally cached embedding models. The first
-uses the locally cached MiniLM-L12 model. Reproducing the ten Figure 1 design
-rounds is optional:
+The first command uses the locally cached MiniLM-L12 model and creates
+`reports/main/figures/` for the report figures. The second uses all four locally
+cached embedding models to produce their comparison figure. These commands
+leave the PDF unchanged.
+
+Reproducing the ten Figure 1 design rounds is optional:
 
 ```bash
 uv run python -m scripts.reporting.refine_figure1 1 2 3 4 5 6 7 8 9 10
 ```
 
-Only this explicit command replaces the Figure 1 image inside Word. It preserves
-all other document parts and saves a backup in the archive:
+The Word editing helpers are optional. To use them, place your editable document
+at `reports/main/Gemini_pronoun_analysis_report.docx`; that document is separate
+from the PDF included in this repository. This command replaces its Figure 1
+image and saves a local backup under `archive/`:
 
 ```bash
 uv run python -m scripts.reporting.update_report_figure1
@@ -140,7 +151,7 @@ between rounds. Existing files and the saved primary dataset are protected
 against overwriting. A new collection becomes the primary dataset only after
 you explicitly choose to replace the saved study data.
 
-## Check before staging your commit
+## Workflow checks
 
 ```bash
 uv run python -m unittest discover -s tests
@@ -149,6 +160,5 @@ git diff --stat
 git diff --check
 ```
 
-Review code, data, results, and report changes before selecting files to stage.
-The reorganization does not stage or commit files. Existing deletions in Git's
-status may predate this cleanup; review those deliberately as well.
+The tests check the primary dataset, TF-IDF grouping and quantifier retention,
+and collection overwrite protection using a mock Gemini client.
